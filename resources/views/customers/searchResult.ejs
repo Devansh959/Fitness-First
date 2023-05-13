@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="/css/searchresult.css">
+<h1 id="title">EXCERCISES</h1>
+<h1 id="title1">Search Results For: <%=search%></h1>
+<section id="excercise-wrapper">
+    
+    
+    <% for(a of excercises??[]){%>
+    <div id="card">
+        <div id="img-container">
+            <img src=<%=a.gifUrl%>>
+        </div>
+        <div id="info">
+            <h1>Name: <span><%=a.name%></span></h1>
+            <h1>Target: <span><%=a.target%></span></h1>
+        </div>
+    </div>
+    <%}%>
+</section>

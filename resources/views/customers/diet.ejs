@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="/css/diet.css">
+<div id="drop">
+<h1>Select your Region</h1>
+
+
+<select id="myDropdown">
+    <option >Select Region...</option>
+    <option value="north">North</option>
+    <option value="south">South</option>
+    <option value="east">East</option>
+    <option value="west">West</option>
+<select>
+
+<div id="contentContainer"></div>
+
+
+</div>
+
+<script>
+ function handleDropdownChange() {
+  const selectedOption = dropdown.value;
+  const contentContainer = document.getElementById("contentContainer");
+
+  // Clear previous content
+  contentContainer.innerHTML = "";
+
+  // Render content based on selected option
+  if (selectedOption === "north") {
+    contentContainer.innerHTML = "<img src='/img/North.png' >";
+  } else if (selectedOption === "south") {
+    contentContainer.innerHTML = "<img src='/img/South.png' >";
+  } else if (selectedOption === "east") {
+    contentContainer.innerHTML = "<img src='/img/East.png' >";
+  } else if (selectedOption === "west") {
+    contentContainer.innerHTML = "<img src='/img/West.png' >";
+  }
+}   
+const dropdown = document.getElementById("myDropdown");
+dropdown.addEventListener("change", handleDropdownChange);
+    
+</script>

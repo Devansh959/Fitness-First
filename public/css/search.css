@@ -1,0 +1,18 @@
+#container{
+    background-color: black;
+    height: 6rem;
+    margin-left:5rem;
+    margin-right: 5rem;
+}
+#container input{
+    border-radius: 7px;
+    margin-left: 30rem;
+    margin-top: 2rem;
+    width: 18rem;
+    padding:6px
+}
+#container button{
+    position:relative;
+    top:0.6rem
+    
+}

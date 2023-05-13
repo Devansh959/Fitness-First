@@ -1,0 +1,19 @@
+h1{
+    font-size: 50px;
+    color: #FE5F1E;;
+}
+#drop{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top:40px;
+}
+#myDropdown{
+    width:200px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+#contentContainer{
+    
+    margin-top: 20px;
+}

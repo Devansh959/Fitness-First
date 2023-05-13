@@ -1,0 +1,42 @@
+#title{
+    margin-left:37rem;
+    font-size: 3rem;
+    color: #FF9933;
+    font-weight: 700;
+}
+#excercise-wrapper{
+    margin-left: 5rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+
+
+}
+#card{
+    margin:20px;
+    padding:25px;
+    display:flex;
+    flex-direction: column;
+    border: 2px solid black;
+    height:310px;
+    width:240px;
+    overflow: scroll;
+
+
+}
+#img-container{
+    height:200px;
+    width:200px;
+
+}
+#info{
+    font-weight: 700;
+}
+#title1{
+    margin-left:33%;
+    font-size: 3rem;
+    color: #FF9933;
+    font-weight: 300;
+}
