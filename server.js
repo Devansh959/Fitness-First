@@ -14,7 +14,11 @@ const Emitter = require('events')
 
 
 // Database connection
+try{
 mongoose.connect(process.env.MONGO_CONNECTION_URL, { useNewUrlParser: true, useCreateIndex:true, useUnifiedTopology: true, useFindAndModify : true });
+}catch(err){
+    console.log("Promise Rejected")
+}
 const connection = mongoose.connection;
 connection.once('open', () => {
     console.log('Database connected...');
